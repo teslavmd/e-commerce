@@ -1,1 +1,100 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+/* COLOR SCHEMAS */
+:root{
+    --primary-color : #82AAE3;
+    --secondary-color : #91D8E4;
+    --third-color : #BFEAF5;
+    --fourth-color : #EAFDFC;
+
+    --info-color : #3fad6d;
+
+    --button-first-color : #3e36ad;
+    --button-first-blur-color : #3e36adb4;
+
+    --button-second-color : #84bbc2;
+    --button-second-blur-color : #84bbc2b4;
+
+
+    --button-third-color : #ad4836;
+    --button-third-blur-color : #ad4836b4;
+
+    --color-shadow-7 : #bbbbbb;
+
+    --font-family : 'Lato';
+
+    --price-card-color : #727272;
+
+    --background-color : #eee6d9;
+    --hover-color-bg : #d3ccc0;
+    --second-hover-color-nav: #d3ccc0bd;
+    
+}
+
+
+body{
+    background: var(--background-color);
+    font-family: var(--font-family);
+    overflow-x: hidden;
+}
+
+/* ESTILOS GLOBALES */
+
+.container{
+    width: 90%;
+    margin: 0 auto;
+}
+
+    /* buttons */
+    .button{
+        cursor: pointer;
+        text-decoration: none;
+        padding: 10px;
+        background: var(--button-first-color);
+        color: #FEFEFE;
+        border: none;
+        border-radius: 5px ;
+    }
+
+    .button:hover{
+        background-color: var(--button-first-blur-color);
+    }
+
+    .button-2{
+        cursor: pointer;
+        text-decoration: none;
+        padding: 10px;
+        background: var(--button-second-color);
+        color: #FEFEFE;
+        border: none;
+        border-radius: 5px ;
+    }
+
+    .button-2:hover{
+        background-color: var(--button-second-blur-color);
+    }
+
+    .button-3{
+        cursor: pointer;
+        text-decoration: none;
+        padding: 10px;
+        background: var(--button-third-color);
+        color: #FEFEFE;
+        border: none;
+        border-radius: 5px ;
+    }
+
+    .button-3:hover{
+        background-color: var(--button-third-blur-color);
+    }
+
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

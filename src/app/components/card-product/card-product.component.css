@@ -1,0 +1,64 @@
+.card{
+    width: 220px;
+    height: 350px;
+    background-color: var(--fourth-color);
+    position: relative;
+}
+
+.card-grid{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    row-gap: 50px;
+    justify-items: center;
+}
+
+.card-img{
+    width: 100%;
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 200ms;
+}
+
+.card-info{
+    height: 30%;
+}
+
+.card-img img{
+    width: 95%;
+    height: 95%;
+}
+
+.card-info-align{
+    width: 85%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.card-price{
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.card-desc{
+    color: var(--price-card-color);
+}
+
+.card-link{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.card:hover {
+    transform: translateY(-7px);
+    transition: 200ms;
+    box-shadow: 1px 2px 10px var(--color-shadow-7);
+}

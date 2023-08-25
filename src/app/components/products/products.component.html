@@ -1,0 +1,19 @@
+<div class="products-container">
+    <div class="product-title">
+        <h3>Productos</h3>
+    </div>
+    <app-card-product></app-card-product> 
+
+</div>
+
+<div 
+class="btn-up" 
+*ngIf="isVisible"
+(click)="scrollToTop()"
+>
+    <img 
+        src="../../../assets/svg/iconmonstr-arrow-up-alt-filled.svg" 
+        width="50px" 
+        alt=""
+    >
+</div>

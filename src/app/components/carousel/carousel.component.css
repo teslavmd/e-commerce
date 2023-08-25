@@ -1,0 +1,14 @@
+.d-block{
+    position: absolute;
+    display: block;
+}
+
+.carousel-inner{
+    width: 100%;
+    height: 400px;
+    margin: auto;
+}
+
+.w-100{
+    width: 100%;
+}
