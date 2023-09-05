@@ -1,4 +1,5 @@
 import { Component, HostListener } from '@angular/core';
+import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
   selector: 'app-products',
@@ -7,8 +8,15 @@ import { Component, HostListener } from '@angular/core';
 })
 export class ProductsComponent {
 
-  setBtnVisible = 600;
-  isVisible = false
+  setBtnVisible : number = 600;
+  isVisible : boolean = false;
+  title : string = "";
+  url : string = "";
+
+  constructor(router : Router){
+    this.url = router.url;
+    this.title = changeTitle(this.url);
+  }
 
   @HostListener('window:scroll', [])
   setVisibility(){
@@ -25,4 +33,12 @@ export class ProductsComponent {
     window.scrollTo(0, 0)
   }
 
+  
 }
+function changeTitle(url: string) : string {
+  if(url.includes("/product/")){
+     return "Ver Más Productos";
+  }
+  return "Productos";
+}
+

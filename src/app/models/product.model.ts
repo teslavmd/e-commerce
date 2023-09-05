@@ -6,7 +6,7 @@ export class Product{
     public image: string;
     public description: string;
     public type: string;
-    
+
 
     constructor(
         id : number,
