@@ -25,7 +25,10 @@ export class CardProductComponent implements OnInit {
   }
 
   scrollToTop(){
-    window.scrollTo(0, 0)
+    setTimeout(() => {
+      document.getElementById("p-info")?.scrollIntoView();
+      
+    }, 500)
   }
 
 

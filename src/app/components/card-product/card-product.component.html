@@ -14,6 +14,6 @@
                 </div>
             </div>
         </div>
-        <a class="card-link" (click)="scrollToTop();" routerLink="/product/{{product.id}}"></a>
+        <a class="card-link" [routerLink]="['/product', product.id]" (click)="scrollToTop();" ></a>
     </div>
 </div>

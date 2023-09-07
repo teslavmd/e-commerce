@@ -27,4 +27,5 @@ export class ProductInfoComponent implements OnInit{
     this.product = this.productService.searchProduct(id);
   }
 
+
 }
